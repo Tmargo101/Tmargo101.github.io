@@ -1,0 +1,205 @@
+.headerContainer {
+	text-align: center;
+	width: 100%;  	
+}
+
+.headerImg {
+  max-width: 85%;
+  height: auto;
+/*   max-height: 100px; */
+}
+
+.mainBody {
+  display: block;
+}
+
+.linksContainer {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.aboutElement {
+  padding: 10px;
+  border-radius:20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.titleText {
+  text-align: center;
+  font-size: 32px;
+}
+
+.aboutTitle {
+  margin-top: 50px;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.aboutLink {
+  font-size: 22px;
+}
+
+.footerContainer {
+  height: 100px;
+}
+
+.profilePic {
+	width: 200px;
+	height: 200px;
+}
+
+
+.aboutMeText {
+	font-size: 20px;
+	text-align: center;
+}
+
+.aboutMeContainer {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 30px;
+	margin-botton: 20px; 
+	padding: 10px;
+	background: #dadada;
+	border-radius:20px;
+	font-family: sans-serif;
+	font-weight: light;
+}
+
+
+
+/* Light mode and Desktop mode */
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #F3F3F4;
+		/* #F2F1F1 */
+	}
+			
+	.aboutTitle {
+		color: black;
+	}
+	
+	.aboutLink {
+		color: black;
+	}
+	
+	a, a.visited {
+  		color: #333;
+  		text-decoration: none;
+	}
+	
+  .titleText {
+    color: black;
+  }
+  
+  .aboutElement {
+    background-color:#bbb;
+  }
+  
+  .headerImg {
+    content:url("https://thomasmargosian.com/assets/images/fullLogoLight.png");
+  }
+}
+
+
+/* Dark mode and Desktop mode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000000;
+	}
+	
+	.aboutTitle {
+		color: #ccc;
+	}
+	
+	.aboutLink {
+		color: #ccc;
+	}	
+	
+	a, a.visited {
+  	color: #ccc;
+  	text-decoration: none;
+	}
+	
+  .titleText {
+    color: white;
+  }
+
+  .aboutElement {
+    background-color: #333;
+  }
+  
+  .headerImg {
+    content:url("https://thomasmargosian.com/assets/images/fullLogoDark.png");
+    width: 500px;
+  }
+}
+
+
+/* Desktop column layout */
+@media (min-width: 800px) {
+  .mainBody {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .linksContainer {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .headerImg {
+	  max-width: 60%;
+  }
+  
+  .aboutMeContainer {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 20px;
+	margin-botton: 25px; 
+	padding: 30px;
+	background: #dadada;
+	border-radius:20px;
+	font-family: sans-serif;
+}
+
+}
+
+/* Light mode and Mobile Mode */
+@media (prefers-color-scheme: light) and (max-width: 700px) {
+  .headerImg {
+    content:url("https://thomasmargosian.com/assets/images/textLogoLight.png");
+  }
+  
+}
+
+
+/* Dark mode and Mobile Mode */
+@media (prefers-color-scheme: dark) and (max-width: 700px) {
+  .headerImg {
+    content:url("https://thomasmargosian.com/assets/images/textLogoDark.png");
+  }
+  
+    .aboutMeContainer {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 20px;
+	margin-botton: 20px; 
+	padding: 10px;
+	background: #dadada;
+	border-radius:20px;
+	font-family: sans-serif;
+	font-weight: light;
+	}
+
+}
+
+
+

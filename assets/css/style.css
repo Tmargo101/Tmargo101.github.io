@@ -72,6 +72,15 @@
 	font-weight: light;
 }
 
+.projectsContainer {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-gap: 20px;
+}
+
+
 
 
 /* Light mode and Desktop mode */
@@ -160,15 +169,19 @@
   }
   
   .aboutMeContainer {
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-top: 20px;
-	margin-botton: 25px; 
-	padding: 30px;
-	background: #dadada;
-	border-radius:20px;
-	font-family: sans-serif;
-}
+  	margin-left: 20%;
+  	margin-right: 20%;
+  	margin-top: 20px;
+  	margin-botton: 25px; 
+  	padding: 30px;
+  	background: #dadada;
+  	border-radius:20px;
+  	font-family: sans-serif;
+  }
+  
+  .projectsContainer {
+    
+  }
 
 }
 

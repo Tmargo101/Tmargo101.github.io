@@ -139,10 +139,19 @@
   .titleText {
     color: white;
   }
+  
+  .aboutMeText {
+    color: #ccc;
+  }
 
   .aboutElement {
     background-color: #333;
   }
+  
+  .aboutMeContainer {
+    background-color: #333;
+  }
+
   
   .headerImg {
     content:url("https://thomasmargosian.com/assets/images/fullLogoDark.png");
@@ -172,17 +181,12 @@
   	margin-left: 20%;
   	margin-right: 20%;
   	margin-top: 20px;
-  	margin-botton: 25px; 
+  	margin-bottom: 25px; 
   	padding: 30px;
-  	background: #dadada;
   	border-radius:20px;
   	font-family: sans-serif;
   }
   
-  .projectsContainer {
-    
-  }
-
 }
 
 /* Light mode and Mobile Mode */
@@ -199,19 +203,6 @@
   .headerImg {
     content:url("https://thomasmargosian.com/assets/images/textLogoDark.png");
   }
-  
-    .aboutMeContainer {
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 20px;
-	margin-botton: 20px; 
-	padding: 10px;
-	background: #dadada;
-	border-radius:20px;
-	font-family: sans-serif;
-	font-weight: light;
-	}
-
 }
 
 

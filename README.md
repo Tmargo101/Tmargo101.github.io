@@ -2,6 +2,8 @@
 
 This is a simple react app used as a personal website for Thomas Margosian. It was created in 2025 to replace an old personal website.
 
+The site is hosted using GitHub Pages at [thomasmargosian.com](https://thomasmargosian.com)
+
 ## Main Scripts
 
 In the project directory, you can run:

@@ -19,12 +19,17 @@ export function Projects(props: ProjectsProps) {
                     <h4 className="text-xl font-bold mb-2">{project.title}</h4>
                     <div className="flex flex-wrap gap-2 mb-4">
                         {project.tech.map((badge, idx) => (
-                        <span key={idx} className="bg-gray-200 text-gray-800 text-sm px-2 py-1 rounded">
+                        <span key={idx} className={props.isDarkMode ? "bg-gray-600 text-gray-200 text-sm px-2 py-1 rounded" : "bg-gray-200 text-gray-800 text-sm px-2 py-1 rounded"}>
                             {badge}
                         </span>
                         ))}
                     </div>
-                    <a href={project.link} className="text-blue-600 hover:underline">View Project</a>
+                    { project.liveLink && (
+                        <a href={project.liveLink} className="text-blue-600 hover:underline">View Project Demo</a>
+                    )}
+                    { project.sourceLink && (
+                        <a href={project.sourceLink} className="text-blue-600 hover:underline">View Code</a>
+                    )}
                     </CardContent>
                 </Card>
                 </motion.div>

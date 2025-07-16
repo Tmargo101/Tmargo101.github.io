@@ -1,5 +1,6 @@
 export type Project = {
     title: string
     tech: Array<string>
-    link: string
+    liveLink?: string
+    sourceLink?: string
 }

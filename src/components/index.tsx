@@ -5,3 +5,4 @@ export { Projects } from '@/components/projects'
 export { ContactMe } from "@/components/contactMe";
 export type { ProjectsProps } from '@/components/projects'
 export { Footer } from '@/components/footer'
+export { Resume } from '@/components/resume'

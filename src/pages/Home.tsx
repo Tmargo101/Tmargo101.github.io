@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Nav, HeroText, AboutMe, Projects, ContactMe, Footer } from '@/components'
-import { Project } from '@/types/types'
+import { Nav, HeroText, AboutMe, Projects, ContactMe, Footer, Resume } from '@/components'
+import { projects } from '@/constants/projects'
 
 export function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -16,16 +16,11 @@ export function Home() {
     return () => window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', listener);
   }, []);
 
-  const projects: Project[] = [
-        { title: "TheKnow", tech: ["React", "Node.js", "MongoDB"], link: "https://github.com/Tmargo101/TheKnow-Web" },
-        { title: "Audio Sandbox", tech: ["Canvas", "WebAudio"], link: "#" },
-        { title: "SpaceX Mapping API", tech: ["React", "Mapbox"], link: "#" }
-  ]
   return (
     <div className={isDarkMode ? "bg-gray-900 text-white min-h-screen" : "bg-white text-black min-h-screen"}>
-        <Nav/>
+        <Nav isDarkMode={isDarkMode} onClick={() => setIsDarkMode(!isDarkMode)}/>
         <HeroText/>
-        <AboutMe/>
+        <AboutMe/>  
         <Projects isDarkMode={isDarkMode} projects={projects}/>
         <ContactMe/>
         <Footer/>

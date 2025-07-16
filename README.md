@@ -56,3 +56,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+How to publish to GitHub Pages: [react-gh-pages README](https://github.com/gitname/react-gh-pages?tab=readme-ov-file)
